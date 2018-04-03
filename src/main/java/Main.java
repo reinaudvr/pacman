@@ -12,6 +12,8 @@ import pacman.game.Constants.*;
 
 import java.util.EnumMap;
 
+import static pacman.game.internal.POType.RADIUS;
+
 
 /**
  * Created by pwillic on 06/05/2016.
@@ -22,6 +24,7 @@ public class Main {
 
         Executor executor = new Executor.Builder()
                 .setVisual(true)
+                .setPOType(RADIUS)
                 .setTickLimit(4000)
                 .build();
 
